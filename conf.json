@@ -1,0 +1,32 @@
+{
+    "pages":{
+        "kp_homepage": {
+            "template": "pages/index.html.j2",
+            "url": "index.html"
+        },
+        "kp_training": {
+            "template": "pages/formations.html.j2",
+            "url": "formations.html"
+        },
+        "kp_dev": {
+            "template": "pages/dev.html.j2",
+            "url": "developpement.html"
+        },
+        "kp_resume": {
+            "template": "pages/resume.html.j2",
+            "url": "resume.html"
+        },
+        "sitemap": {
+            "template": "utils/sitemap.xml.j2",
+            "url": "sitemap.xml"
+        },
+        "robots": {
+            "template": "utils/robots.txt.j2",
+            "url": "robots.txt"
+        },
+        "404": {
+            "template": "utils/error404.html.j2",
+            "url": "404.html"
+        }
+    }
+}

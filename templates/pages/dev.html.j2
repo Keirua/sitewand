@@ -1,0 +1,53 @@
+{% extends "layout.html.j2"%}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="css/style.css">
+{% endblock stylesheets %} 
+
+{% block meta_description %}Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité. Et si nous travaillions ensemble ?{% endblock meta_description %}
+
+{%block content%}
+
+<div id="page_content">
+<h2><i class="icon-keyboard"></i> Développement web</h2>
+
+<p>Je développe des <strong>applications web métier</strong> spécifiques sur mesure, de la phase de conception jusqu'à la réalisation.
+
+Je crée des produits <strong>fonctionnels</strong>, <strong>stables</strong> et <strong>durables</strong> sur lesquels vous pouvez investir sur le long terme : Applications web, intranet, extranet... </p>
+  
+<br />
+<div class="row">
+
+<div class="span5">
+<h3>Mes méthodes</h3>
+<ul>
+<li>Tous mes projets sont réalisés de A à Z <strong>sur mesure</strong>.</li>
+<li>Mes projets sont réalisés par <strong>itérations successives</strong> afin que le produit final corresponde au mieux à vos besoins, même s'ils évoluent.</li>
+<li>J'utilise les <strong>bonnes pratiques</strong> de développement issues des plus grands professionels pour vous garantir des produits de qualité.</li>
+
+</ul>
+</div>
+
+<div class="span5 offset2">
+<h3>Mes outils</h3>
+<p>J'utilise des outils libres, fiables et éprouvés</p>
+<ul>
+<li>
+	Côté client : <strong>HTML5</strong>, <strong>CSS</strong> avec <strong>Less</strong>, <strong>JS</strong>, <strong>React</strong>, <strong>AngularJS</strong>
+</li>
+<li>
+	Côté serveur : <strong>Symfony2/Symfony3</strong> (PHP), <strong>Silex</strong> (PHP), <strong>Zend</strong> (PHP)<br />
+</li>
+<li>
+Et tous les classiques : <strong>versionning</strong>, <strong>intégration continue</strong>, <strong>tests</strong>...
+</li>
+</div>
+</div>
+
+<h2>Contact</h2>
+<p>Pour discuter de votre idée ou pour me demander un devis, n'hésitez pas à me contacter :</p>
+{% include "contact_details.html.j2" %}
+
+</div>
+
+{% endblock %}

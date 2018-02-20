@@ -1,0 +1,39 @@
+{% extends "layout.html.j2"%}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="css/style.css">
+{% endblock stylesheets %} 
+
+{% block meta_description %}Développeur web Symfony2/Symfony3 freelance à Paris, je propose des formations dans toute la france. Et si nous travaillions ensemble ?{% endblock meta_description %}
+
+{%block content%}
+<div id="page_content">
+
+<h2><i class="icon-pencil"></i> Formations Symfony2/Symfony3</h2>
+<p>Je propose à vos équipes des formations à Symfony.<br />
+<ul>
+  <li>Les formations ont lieu sur <strong>2 à 3 jours</strong>.</li>
+  <li>Je me déplace dans vos locaux dans <strong>toute la france</strong> ou me charge de réserver une salle.</li>
+  <li>Les formations en <strong>petits groupes</strong> (6 personnes max.).</li>
+  <li>Tu es indépendant ? Je peux te délivrer une formation !</li>
+  <li>De <strong>nombreux ateliers</strong> permettent de mettre en pratique les connaissances acquises. L'objectif ? Vous rendre autonome.</li>
+  <li>Le cours s'adresse à ceux qui décrouvrent Symfony2/Symfony3 et <strong>j'adapte son contenu à vos besoins</strong>. Un cours avancé est en préparation.</li>
+</ul>
+</p>
+
+
+
+<h3>Les bases de Symfony</h3>
+<p>Cette formation va vous permettre de découvrir les mécanismes de base du framework PHP Symfony2 et de mettre en pratique ces connaissances.<br />
+
+A travers la création d'un petit projet réalisé en fil rouge par chaque stagiaire au cours de travaux pratiques, vous découvrirez comment réaliser les tâches les plus courantes de la création d'un site web avec Symfony2. 
+</p>
+
+<h2>Inscriptions</h2>
+<p>Pour participer à une de ces formations, pour avoir plus de détails ou pour me demander un devis, n'hésitez pas à me contacter :</p>
+
+
+        {% include "contact_details.html.j2" %}
+</div>
+</div>
+{%endblock%}

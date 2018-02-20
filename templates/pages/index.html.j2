@@ -1,0 +1,45 @@
+{% extends "layout.html.j2" %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="css/style.css">
+{% endblock stylesheets %} 
+
+{% block content%}
+  <div>
+      
+          <div class="accueil entrytitle">
+          <p>
+          Je suis Clément, ingénieur web freelance. J'aime créer des <a href="{{ path(name="kp_dev") }}">applications web de qualité</a> et <a href="{{ path(name="kp_training") }}">partager mon expérience</a>. Et si nous travaillions ensemble ?
+          </p>
+          </div>
+                  
+          <div class="row accueil_categories">
+            <div class="span5 offset1 entrytitle">
+            <h2><a href="{{ path(name="kp_training") }}">Formations Symfony</a></h2>
+            <strong>Je propose des formations à Symfony2/Symfony3</strong><br />
+            <p class="entry">Je me déplace dans vos locaux, ou me charge de louer une salle pour réaliser un cours en petit groupe, sur 2 à 3 jours.
+            <strong><a href="{{ path(name="kp_training") }}"><i class="icon-arrow-right"></i> En savoir plus</a></strong></p>
+            </div>
+            
+
+            <div class="span5 offset1 entrytitle">
+            <h2><a href="{{ path(name="kp_dev") }}">Développement web</a></h2>
+            <strong>Je développe vos applications web</strong>
+            <p class="entry">Je réalise vos projets entièrement sur mesure, en freelance.<br />
+             <strong><a href="{{ path(name="kp_dev") }}"><i class="icon-arrow-right"></i> En savoir plus</a></strong></p>
+            </div>
+           
+          </div>
+            
+          
+            <div class="row">
+          <h1><i class="icon-calendar"></i> Quand ? <i class="icon-eur"></i> Combien ?</h1>
+          <p>Pour discuter d'une idée ou pour un devis, n'hésitez pas à me contacter : </p>
+
+
+          {% include "contact_details.html.j2" %}
+          </div>
+      
+  </div>
+  
+{% endblock %}

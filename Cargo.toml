@@ -1,0 +1,12 @@
+[package]
+name = "sitewand"
+version = "0.1.0"
+authors = ["clement camin <clement@keiruaprod.fr>"]
+
+[dependencies]
+tera = "0.11.2"
+lazy_static = "1.0.0"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
+structopt = "0.2.2"

@@ -1,0 +1,66 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{% block title %}Développeur web et formateur Symfony2/Symfony3 freelance Paris - KeiruaProd{% endblock %}</title>
+
+    {% block meta %}
+    <meta name="author" content="Clement Camin">
+    <meta name="description" content="{% block meta_description %}Développeur web Symfony2/Symfony3 freelance à Paris, j'aime concevoir des applications web de qualité et transmettre mes compétences. Travaillons ensemble !{% endblock meta_description %}">
+    {% endblock meta %}
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  {% block stylesheets %}
+  
+  {% endblock stylesheets %} 
+  
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+  <h1><a href="{{ path(name="kp_homepage") }}" onClick="_gaq.push(['_trackEvent', 'menu', 'home']);">KeiruaProd</a></h1>
+  
+  <a href="{{ path(name="kp_training") }}" onClick="_gaq.push(['_trackEvent', 'menu', 'formations']);">Formations</a> | <a href="{{ path(name="kp_dev") }}" onClick="_gaq.push(['_trackEvent', 'menu', 'developpement']);">Développement</a> | <a href="{{ path(name="kp_resume") }}">En résumé</a> | <a href="http://blog.keiruaprod.fr/" onClick="_gaq.push(['_trackEvent', 'menu', 'blog']);">Blog</a> | <a href="http://tweelinks.keiruaprod.fr/" onClick="_gaq.push(['_trackEvent', 'menu', 'veille']);">Veille</a>
+</div>
+  {% block content %}
+  {% endblock content%}  
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script language="javascript">
+$(function() {
+    $(".imgicon")
+        .mouseover(function() { 
+      var src = $(this).attr("src").replace(".png", "-hover.png");
+            $(this).attr("src", src);
+        })
+        .mouseout(function() {
+            var src = $(this).attr("src").replace("-hover.png", ".png");
+            $(this).attr("src", src);
+        });
+});
+</script>
+<script>
+  var _gaq=[['_setAccount','UA-26997065-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
